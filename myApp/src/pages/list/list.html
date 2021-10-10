@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>contato</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <img class="contato" src="assets/imgs/contato.gif"/>
+
+    <ion-item>
+      <ion-label stacked>Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="nome"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label stacked>Assunto</ion-label>
+      <ion-input type="text" [(ngModel)]="assunto"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Mensagem</ion-label>
+      <ion-input type="text" [(ngModel)]="mensagem"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  <button ion-button full (click)="enviar()">Enviar mensagem</button>
+ 
+</ion-content>
